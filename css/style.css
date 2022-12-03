@@ -1,10 +1,20 @@
 /* common styles css for parts body, header and footer 
 in files index.html and porfolio.html */
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0px 15px;
+  /* background-color: aquamarine; */
+}
+
+/* ul {
+  list-style: none;
+} */
 
 /* body */
 :root {
   --text-color: #212121;
-  --background-color: #E5E5E5;
+  --background-color: #e5e5e5;
   --text-selection-color: red;
   --background-selection-color: chartreuse;
 }
@@ -22,25 +32,28 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* width: 1600px;
-  height: 1880px;
-  border: solid 1px; */
-
 /* header */
 .header-index-portfolio {
-  width: 1600px;
-  height: 80px;
   border: solid 1px;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  border-bottom-color: #ececec;
-  display: flex;
-  align-items: center;
+  border-bottom-color: hsl(252, 79%, 44%);
+  background-color: #ffffff;
 }
-.header-index-portfolio ul {
-  list-style: none;
+.nav-flex-box {
   display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
 }
 
 .nav-webstudio {
@@ -48,7 +61,7 @@ body {
   font-size: 26px;
   text-decoration: none;
   color: inherit;
-  margin: 24px 93px 25px 215px;
+  margin-right: 93px;
 }
 
 .nav-webstudio > span {
@@ -58,22 +71,41 @@ body {
 .nav-menu {
   text-decoration: none;
   color: inherit;
-  margin-right: 46px;
   font-weight: 500;
 }
+
+.nav-menu-item {
+  margin-right: 46px;
+}
+
+.nav-menu-item:last-child {
+  margin-right: 0px;
+}
+
 .nav-menu:hover,
 .nav-menu:focus {
   color: #2196f3;
 }
 
 .menu-contacts {
-  margin-left: 318px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 371px;
 }
+
 .menu-contacts a {
   text-decoration: none;
   font-weight: 500;
   color: #757575;
+}
+
+.menu-contacts-item {
   margin-right: 50px;
+}
+.menu-contacts-item:last-child {
+  margin-right: 0px;
 }
 
 .menu-contacts a:hover,
@@ -122,26 +154,38 @@ body {
 }
 
 /* styles css for file index.html */
+.main {
+  /* height: 600px;
+  width: 1600px; */
+  background-color: white;
+  margin: 0px auto;
+}
+
 .main-section {
-  height: 600px;
-  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.bg-color {
   background-color: #2f303a;
 }
 
 .main-section > h1 {
   font-size: 44px;
   font-weight: 900;
+  line-height: 60px;
   color: white;
   width: 696px;
-  height: 120px;
+  /* height: 120px; */
   text-align: center;
-  line-height: 60px;
+  margin: 0px auto 30px;
+  /* line-height: 60px;
   margin-left: 452px;
   margin-block: 0px;
-  padding-top: 200px;
+  padding-top: 200px; */
 }
 
 .main-section > button {
+  display: block;
   color: white;
   background-color: #2196f3;
   width: 200px;
@@ -150,39 +194,52 @@ body {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  margin-left: 700px;
+  margin: 0px auto;
+  border: none;
+  /* margin-left: 700px; */
 }
 
 .information {
-  width: 1170px;
-  height: 101px;
+  margin: 0px auto;
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* flex-direction: row; */
   /* background-color: #f39d9d; */
+}
+
+.information-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
 }
 
 .information h3 {
   font-weight: 700;
   font-size: 14px;
+  line-height: 16.41px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .information p {
   color: #757575;
-  line-height: 1.714;
+  line-height: 24px;
+  margin: 0px;
 }
 
 .description {
-  width: 1170px;
-  height: 386px;
-  margin-left: 215px;
-  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
   /* background-color: antiquewhite; */
 }
 
 .description h2 {
   font-size: 36px;
   font-weight: 700;
-  margin-left: 409px;
-  margin-bottom: 0px;
+  margin: 0px auto;
 }
 
 .description ul {
