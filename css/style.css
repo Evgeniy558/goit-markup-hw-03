@@ -170,9 +170,11 @@ body {
 
 /* styles css for file index.html */
 
-.main {
+.container-main {
   width: 1600px;
   padding: 0px;
+  margin: 0px auto;
+  display: flex;
 }
 
 .main-section {
