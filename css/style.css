@@ -114,13 +114,15 @@ body {
 }
 
 /* footer */
+.bg-color-footer {
+  background-color: #2f303a;
+}
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-  background-color: #2f303a;
 }
 
 .footer .nav-webstudio-footer {
@@ -168,12 +170,19 @@ body {
 
 /* styles css for file index.html */
 
+.main {
+  width: 1600px;
+  padding: 0px;
+}
+
 .main-section {
+  margin: 0px auto;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.bg-color {
   background-color: #2f303a;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .main-section > h1 {
@@ -206,6 +215,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 
@@ -249,8 +259,10 @@ body {
   gap: 30px;
 }
 
-.team {
+.bg-color {
   background-color: #f5f4fa;
+}
+.team {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -349,11 +361,16 @@ body {
   gap: 30px;
 }
 
-.box-portfolio-fotos figure {
-  border: solid 1px;
-  border-color: rgba(238, 238, 238, 1);
+.box-portfolio-fotos li {
   margin: 0px;
   width: calc((100% - 60px) / 3);
+}
+
+.box-portfolio-fotos figure {
+  margin: 0px;
+}
+figure > img {
+  vertical-align: middle;
 }
 
 .box-portfolio-fotos figcaption {
@@ -361,10 +378,15 @@ body {
   font-weight: 700;
   line-height: 2;
   padding-left: 24px;
+  padding-top: 20px;
   letter-spacing: 0.06em;
+  border: solid 1px;
+  border-top: none;
+  border-color: rgba(238, 238, 238, 1);
 }
+
 figcaption p {
-  margin: 20px 0px 0px;
+  margin: 0px;
 }
 
 .box-portfolio-fotos span {
